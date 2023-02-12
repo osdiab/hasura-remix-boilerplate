@@ -6,6 +6,9 @@
   "packageManager": "pnpm@7.21.0",
   "scripts": {
     "dev": "turbo run dev",
+    "lint": "rome check .",
+    "lint:fix": "pnpm lint --apply",
+    "format": "rome format . --write",
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm"
   },
@@ -21,6 +24,7 @@
     }
   },
   "devDependencies": {
+    "rome": "^11.0.0",
     "turbo": "^1.7.4"
   }
 }

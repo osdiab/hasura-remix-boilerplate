@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/rome/configuration_schema.json",
+  "files": {
+    "ignore": ["libs/gql-web/generated/", "apps/hasura/metadata/", "apps/web-app/build/", "apps/web-app/public/"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  }
+}
