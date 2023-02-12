@@ -1,11 +1,13 @@
 {
-  "name": "uffizzi-hasura-remix",
+  "name": "@hasura-remix-boilerplate/monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "packageManager": "pnpm@7.21.0",
   "scripts": {
     "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
     "lint": "rome check .",
     "lint:fix": "pnpm lint --apply",
     "format": "rome format . --write",

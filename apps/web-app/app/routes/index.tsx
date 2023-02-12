@@ -1,9 +1,9 @@
-import { useLoaderData } from "@remix-run/react";
-import { graphql } from "@uhr/gql-web/generated/gql";
+import { graphql } from "@hasura-remix-boilerplate/gql-web/generated/gql";
 import type {
 	AllUsersQuery,
 	AllUsersQueryVariables,
-} from "@uhr/gql-web/generated/graphql";
+} from "@hasura-remix-boilerplate/gql-web/generated/graphql";
+import { useLoaderData } from "@remix-run/react";
 import { request } from "graphql-request";
 
 const query = graphql(`

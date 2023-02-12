@@ -1,5 +1,5 @@
 {
-  "name": "@uhr/web-app",
+  "name": "@hasura-remix-boilerplate/web-app",
   "version": "1.0.0",
   "private": true,
   "sideEffects": false,
@@ -10,10 +10,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@hasura-remix-boilerplate/gql-web": "workspace:*",
     "@remix-run/node": "^1.12.0",
     "@remix-run/react": "^1.12.0",
     "@remix-run/serve": "^1.12.0",
-    "@uhr/gql-web": "workspace:*",
+    "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
     "isbot": "^3.6.5",
     "react": "^18.2.0",

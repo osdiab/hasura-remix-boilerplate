@@ -1,5 +1,5 @@
 {
-  "name": "@uhr/gql-web",
+  "name": "@hasura-remix-boilerplate/gql-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

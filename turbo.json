@@ -4,6 +4,16 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "build"
+      ]
     }
   }
 }

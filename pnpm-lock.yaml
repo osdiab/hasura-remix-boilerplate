@@ -15,6 +15,7 @@ importers:
 
   apps/web-app:
     specifiers:
+      '@hasura-remix-boilerplate/gql-web': workspace:*
       '@remix-run/dev': ^1.12.0
       '@remix-run/eslint-config': ^1.12.0
       '@remix-run/node': ^1.12.0
@@ -22,19 +23,20 @@ importers:
       '@remix-run/serve': ^1.12.0
       '@types/react': ^18.0.25
       '@types/react-dom': ^18.0.8
-      '@uhr/gql-web': workspace:*
       eslint: ^8.27.0
+      graphql: ^16.6.0
       graphql-request: ^5.1.0
       isbot: ^3.6.5
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^4.8.4
     dependencies:
+      '@hasura-remix-boilerplate/gql-web': link:../../libs/gql-web
       '@remix-run/node': 1.12.0
       '@remix-run/react': 1.12.0_biqbaboplfbrettd7655fr4n2y
       '@remix-run/serve': 1.12.0
-      '@uhr/gql-web': link:../../libs/gql-web
-      graphql-request: 5.1.0
+      graphql: 16.6.0
+      graphql-request: 5.1.0_graphql@16.6.0
       isbot: 3.6.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -2486,19 +2488,12 @@ packages:
       value-or-promise: 1.0.12
     dev: true
 
-  /@graphql-typed-document-node/core/3.1.1:
-    resolution: {integrity: sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==}
-    peerDependencies:
-      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-    dev: false
-
   /@graphql-typed-document-node/core/3.1.1_graphql@16.6.0:
     resolution: {integrity: sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       graphql: 16.6.0
-    dev: true
 
   /@hapi/hoek/9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -5695,19 +5690,6 @@ packages:
       - utf-8-validate
     dev: true
 
-  /graphql-request/5.1.0:
-    resolution: {integrity: sha512-0OeRVYigVwIiXhNmqnPDt+JhMzsjinxHE7TVy3Lm6jUzav0guVcL0lfSbi6jVTRAxcbwgyr6yrZioSHxf9gHzw==}
-    peerDependencies:
-      graphql: 14 - 16
-    dependencies:
-      '@graphql-typed-document-node/core': 3.1.1
-      cross-fetch: 3.1.5
-      extract-files: 9.0.0
-      form-data: 3.0.1
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /graphql-request/5.1.0_graphql@16.6.0:
     resolution: {integrity: sha512-0OeRVYigVwIiXhNmqnPDt+JhMzsjinxHE7TVy3Lm6jUzav0guVcL0lfSbi6jVTRAxcbwgyr6yrZioSHxf9gHzw==}
     peerDependencies:
@@ -5720,7 +5702,6 @@ packages:
       graphql: 16.6.0
     transitivePeerDependencies:
       - encoding
-    dev: true
 
   /graphql-tag/2.12.6_graphql@16.6.0:
     resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}
