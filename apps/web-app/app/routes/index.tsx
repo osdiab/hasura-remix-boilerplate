@@ -17,7 +17,7 @@ const query = graphql(`
 
 export async function loader() {
 	return request<AllUsersQuery, AllUsersQueryVariables>(
-		"http://localhost:8002/v1/graphql",
+		process.env.GRAPHQL_ENDPOINT ?? "http://localhost:8002",
 		query,
 	);
 }
