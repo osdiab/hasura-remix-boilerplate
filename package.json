@@ -1,0 +1,26 @@
+{
+  "name": "uffizzi-hasura-remix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@7.21.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/core",
+        "@types/node"
+      ]
+    }
+  },
+  "devDependencies": {
+    "turbo": "^1.7.4"
+  }
+}
