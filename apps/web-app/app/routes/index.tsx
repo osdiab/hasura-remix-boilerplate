@@ -1,6 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
 import { graphql } from "@uhr/gql-web/generated/gql";
-import {
+import type {
 	AllUsersQuery,
 	AllUsersQueryVariables,
 } from "@uhr/gql-web/generated/graphql";
